@@ -35,7 +35,7 @@ const Footer = () => {
                             <div className="row">
                                 <div className="col">
                                     <div className="social-media-icons">
-                                        <a href="#top"
+                                        <a href="/"
                                             title="Facebook" target="_blank">
                                             <div className="fab fa-facebook-f fa-2x"></div>
                                             <span>Facebook</span>
@@ -46,7 +46,7 @@ const Footer = () => {
 
                                 <div className="col">
                                     <div className="social-media-icons">
-                                        <a href="#top" title="Instagram"
+                                        <a href="/" title="Instagram"
                                             target="_blank">
                                             <div className="fab fa-instagram fa-2x"></div>
                                             <span>Instagram</span>
@@ -57,7 +57,7 @@ const Footer = () => {
 
                                 <div className="col">
                                     <div className="social-media-icons">
-                                        <a href="#top"
+                                        <a href="/"
                                             title="Linkedin" target="_blank">
                                             <div className="fab fa-linkedin-in fa-2x"></div>
                                             <span>Linkedin</span>
