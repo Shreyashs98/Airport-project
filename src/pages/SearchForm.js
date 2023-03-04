@@ -101,7 +101,7 @@ const SearchForm = () => {
                                 <input type="text" placeholder="Departure Airport" 
                                 onChange={departureAirportHandler} 
                                 value={departureAirport} className="placeholder placeholder-airport"/>
-                            {(errors && errors.departureAirport)? <h2>Invaild Departure Airport</h2>:null}
+                            {(errors && errors.departureAirport)? <h4 style={{color:"white",backgroundColor:"Highlight"}}>Invaild Departure Airport</h4>:null}
                             </div> <i
                                 className="fas fa-map-marker-alt input-icon"></i>
                         </label>
@@ -110,12 +110,12 @@ const SearchForm = () => {
                                 <div className="heading mb-1">Parking Check-In</div>
                                 <div className="placeholder">
                                     <input name="checkin" type="date" placeholder="Parking Check-Out" onChange={parkingCheckInHandler} value={parkingCheckIn} className="placeholder placeholder-airport" style={{width:"100%"}}/>
-                                {(errors && errors.parkingCheckIn)? <h2>Invaild Parking Check-In</h2>:null}
+                                {(errors && errors.parkingCheckIn)? <h2 style={{color: "white",backgroundColor:"Highlight"}}>Invaild Parking Check-In</h2>:null}
                                 </div> 
                             </label> <label className="col-sm-6 p-0 pl-sm-0 date_input">
                                 <div className="heading mb-1">Parking Check-Out</div>
                                     <input name="Check-Out" type="date" placeholder="Parking Check-Out" onChange={parkingCheckOutHandler} value={parkingCheckOut} className="placeholder placeholder-airport" style={{width:"100%"}}/>
-                                {(errors && errors.parkingCheckOut)? <h2>Invaild Parking Check-Out</h2>:null}
+                                {(errors && errors.parkingCheckOut)? <h2 style={{color: "white",backgroundColor:"Highlight"}}>Invaild Parking Check-Out</h2>:null}
                             </label></div>
                         <div className="col-12 col-xl-2 p-0 pl-xl-3 my-3 my-xl-0">
                             <div className="d-none d-xl-block heading mb-1 invisible">Submit</div>
