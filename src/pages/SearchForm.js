@@ -14,9 +14,9 @@ const SearchForm = () => {
     const onSubmitHandler = (e) => {
         e.preventDefault();
         //i'm printing all the data fetched in console just to verify everything works fine
-        //console.log(departureAirport);
-        //console.log(parkingCheckIn);
-        //console.log(parkingCheckOut);
+        console.log(departureAirport);
+        console.log(parkingCheckIn);
+        console.log(parkingCheckOut);
 
         if(departureAirport && parkingCheckIn && parkingCheckOut)
         {
