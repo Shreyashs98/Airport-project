@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import moment from "moment/moment";
+import moment from "moment";
 
 const today = moment().format('YYYY-MM-DD').toString()
 const tomorrow = moment().add(1,'days').format('YYYY-MM-DD').toString()
@@ -47,12 +47,7 @@ const SearchForm = () => {
     const parkingCheckOutHandler =(e) => {
         const {value}=e.target;
             setParkingCheckOut(value);
-            if(moment(parkingCheckIn) > moment(parkingCheckOut))
-            {
-                alert("Check In Date can't be greater than Check Out Date")
-                SetErrors((err) => ({ ...err, parkingCheckOut: true }))
-    
-            }
+          
             if (e.target.value) {
                 SetErrors((err) => ({ ...err, parkingCheckOut: false }))
                 } else {
@@ -63,12 +58,7 @@ const SearchForm = () => {
     const parkingCheckInHandler =(e) => {
         const {value}=e.target;
             setParkingCheckIn(value);
-            if(moment(parkingCheckIn) > moment(parkingCheckOut))
-            {
-                alert("Check In Date can't be greater than Check Out Date")
-                SetErrors((err) => ({ ...err, parkingCheckOut: true }))
-    
-            }
+           
             if (e.target.value) {
                 SetErrors((err) => ({ ...err, parkingCheckIn: false }))
                 } else {
