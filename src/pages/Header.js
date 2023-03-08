@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         
@@ -15,6 +15,11 @@ const Header = () => {
 
                 <div className="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
+                    <li className="nav-item">
+                            <Link className="nav-link" to="login">
+                               Login
+                            </Link>
+                        </li>
 
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink"
