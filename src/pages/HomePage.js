@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 import SearchForm from './SearchForm';
 const HomePage =()=>{
 
@@ -61,7 +60,7 @@ const HomePage =()=>{
             </div>
 
 
-            <Footer />
+            
         </div>
     </div>
     )
