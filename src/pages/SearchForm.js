@@ -143,8 +143,7 @@ const SearchForm = () => {
                                 {record.name}
                                 </li>
                                 )
-                                }
-                                )} 
+                                })} 
                                 
                               
                                 {loading ?<h1>Loading</h1>:null}
